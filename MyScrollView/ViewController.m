@@ -19,27 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-   
-//    UIView * redBox = [[UIView alloc]initWithFrame:CGRectMake(20, 20, 100, 100)];
-//
-//    [self.view addSubview:redBox];
-//
-//    UIView * greenBox = [[UIView alloc]initWithFrame:CGRectMake(150, 150, 150, 200)];
-//
-//    [self.view addSubview:greenBox];
-//    
-//
-//    UIView * blueBox = [[UIView alloc]initWithFrame:CGRectMake(40, 400, 200, 150)];
-//
-//    [self.view addSubview:blueBox];
-//
-//    UIView * yellowBox = [[UIView alloc]initWithFrame:CGRectMake(100, 600, 180, 150)];
-//
-//    [self.view addSubview:yellowBox];
-    
-    
-
-    
     
     
 }

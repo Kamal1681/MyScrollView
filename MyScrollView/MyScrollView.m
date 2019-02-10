@@ -35,8 +35,6 @@
 {
     [super addSubview:view];
     
-    
-    
 }
 
 - (void) viewPanned: (UIPanGestureRecognizer *) sender {
@@ -44,16 +42,12 @@
     
     CGPoint translationInView = [sender translationInView:self];
     
-    if (fabs (translationInView.x) < fabs (self.contentSize.width) && fabs (translationInView.y) < fabs (self.contentSize.height))  {
+    CGRect newLocation = CGRectMake(sender.view.bounds.origin.x - translationInView.x, sender.view.bounds.origin.y - translationInView.y , sender.view.bounds.size.width, sender.view.bounds.size.height);
+    
+    [sender.view setBounds:newLocation];
         
-        CGRect newLocation = CGRectMake(sender.view.bounds.origin.x - translationInView.x, sender.view.bounds.origin.y - translationInView.y , sender.view.bounds.size.width, sender.view.bounds.size.height);
-        
-        [sender.view setBounds:newLocation];
-        
-        
-        
-    } else [sender.view clipsToBounds];
     [sender setTranslation:CGPointZero inView:self];
+    
 }
 /*
 // Only override drawRect: if you perform custom drawing.
